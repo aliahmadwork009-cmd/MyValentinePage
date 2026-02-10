@@ -1,6 +1,7 @@
 let yes = document.getElementById("yesBtn");
 let no = document.getElementById("noBtn");
 let message = document.getElementById("message");
+let meme = document.getElementById("meme"); // New: Get the meme image
 
 let yesSize = 1; // starts normal size
 
@@ -23,6 +24,7 @@ no.addEventListener("click", function(e) {
   // If Yes gets too big, maybe show message anyway 😄
   if (yesSize > 4) {
     message.classList.remove("hidden");
+    meme.classList.remove("hidden"); // New: Show meme if too big
     no.style.display = "none";
   }
 });
@@ -30,6 +32,7 @@ no.addEventListener("click", function(e) {
 // When they click Yes → happy ending!
 yes.addEventListener("click", function() {
   message.classList.remove("hidden");
+  meme.classList.remove("hidden"); // New: Show the meme GIF!
   no.style.display = "none";
   yes.style.display = "none"; // hide buttons
   // You can add more fun here later (confetti, music...)
