@@ -1,42 +1,44 @@
 body {
   margin: 0;
-  height: 100vh;
+  min-height: 100vh; /* Changed to min-height so it expands if needed */
   background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
   font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  /* Removed overflow: hidden to allow scrolling if content is tall */
 }
 
 .container {
   text-align: center;
   background: white;
-  padding: 40px;
+  padding: 20px; /* Reduced padding for better fit on small screens */
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.2);
   max-width: 90%;
+  margin: 20px; /* Added margin to center better */
 }
 
 h1 {
   color: #e91e63;
-  font-size: 2.5em;
+  font-size: 2em; /* Slightly smaller for fit */
+  margin-top: 0; /* Less space */
 }
 
 .cat {
-  font-size: 120px;
-  margin: 20px 0;
+  font-size: 100px; /* Slightly smaller */
+  margin: 10px 0;
   animation: bounce 2s infinite;
 }
 
 .buttons {
-  margin: 40px 0;
+  margin: 20px 0; /* Less space */
 }
 
 button {
-  font-size: 1.8em;
-  padding: 15px 40px;
-  margin: 20px;
+  font-size: 1.5em; /* Smaller buttons for fit */
+  padding: 10px 30px;
+  margin: 10px;
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -55,9 +57,9 @@ button {
 }
 
 #message {
-  font-size: 3em;
+  font-size: 2.5em; /* Smaller for fit */
   color: #e91e63;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .hidden {
@@ -72,7 +74,7 @@ button {
 /* Style for GIFs */
 .initial-gif, #meme {
   max-width: 80%;
-  margin: 20px 0;
+  margin: 10px 0; /* Less space */
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
