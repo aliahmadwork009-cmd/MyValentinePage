@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  max-width: 90%;
+}
+
+h1 {
+  color: #e91e63;
+  font-size: 2.5em;
+}
+
+.cat {
+  font-size: 120px;
+  margin: 20px 0;
+  animation: bounce 2s infinite;
+}
+
+.buttons {
+  margin: 40px 0;
+}
+
+button {
+  font-size: 1.8em;
+  padding: 15px 40px;
+  margin: 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#yesBtn {
+  background: #4caf50;
+  color: white;
+}
+
+#noBtn {
+  background: #f44336;
+  color: white;
+  position: relative; /* important for moving */
+}
+
+#message {
+  font-size: 3em;
+  color: #e91e63;
+  margin-top: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
