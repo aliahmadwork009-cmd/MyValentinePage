@@ -1,7 +1,7 @@
 let yes = document.getElementById("yesBtn");
 let no = document.getElementById("noBtn");
 let message = document.getElementById("message");
-let meme = document.getElementById("meme"); // New: Get the meme image
+let meme = document.getElementById("meme"); // Gets the Tom GIF
 
 let yesSize = 1; // starts normal size
 
@@ -21,18 +21,18 @@ no.addEventListener("click", function(e) {
   yesSize += 0.4;
   yes.style.transform = "scale(" + yesSize + ")";
   
-  // If Yes gets too big, maybe show message anyway 😄
+  // If Yes gets too big, show message + Tom GIF anyway 😄
   if (yesSize > 4) {
     message.classList.remove("hidden");
-    meme.classList.remove("hidden"); // New: Show meme if too big
+    meme.classList.remove("hidden");
     no.style.display = "none";
   }
 });
 
-// When they click Yes → happy ending!
+// When they click Yes → happy ending + show Tom GIF!
 yes.addEventListener("click", function() {
   message.classList.remove("hidden");
-  meme.classList.remove("hidden"); // New: Show the meme GIF!
+  meme.classList.remove("hidden"); // Shows the Tom violin GIF
   no.style.display = "none";
   yes.style.display = "none"; // hide buttons
   // You can add more fun here later (confetti, music...)
